@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="calc.css">
+
+<body>
+<center>
+    <h1><font color="white">CALCULATOR</font></h1>
+    <input type="text"  id="result" readonly>
+    <table border="5">
+        
+        <tr>
+            <td> <button onclick="appendNumber(7)" ><font color="white" size="6">7</font></button></td>
+            <td><button onclick="appendNumber(8)"><font color="white" size="6">8</font></button> </td>
+            <td><button onclick="appendNumber(9)"><font color="white" size="6">9</font></button> </td>
+            <td> <button  onclick="setOperator('+')"><font color="gold" size="6">+</font></button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="appendNumber(4)"><font color="white" size="6">4</font></button></td>
+            <td> <button  onclick="appendNumber(5)"><font color="white" size="6">5</font></button></td>
+            <td> <button  onclick="appendNumber(6)"><font color="white" size="6">6</font></button></td>
+            <td ><button  onclick="setOperator('-')"><font color="gold" size="6">-</font></button> </td>
+        </tr>
+        <tr>
+            <td><button  onclick="appendNumber(3)"><font color="white" size="6">3</font></button> </td>
+            <td> <button  onclick="appendNumber(2)"><font color="white" size="6">2</font></button></td>
+            <td> <button onclick="appendNumber(1)"><font color="white" size="6">1</font></button></td>
+            <td > <button onclick="setOperator('*')"><font color="gold" size="6">*</font></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(0)" ><font color="white" size="6">0</font></button> </td>
+            <td><button onclick="clearresult('C')"><font color="red" size="6">C</font></button> </td>
+            <td><button onclick="calculate('=')"><font color="gold" size="6">=</font></button> </td>
+            <td> <button onclick="setOperator('/')"><font color="gold" size="6">/</font></button></td>
+        </tr>
+    </table>
+</center>
+</body>
+
+<script src="calc.js"></script>
+</html>
